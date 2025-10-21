@@ -285,4 +285,49 @@
       q4: 'b',
       q5: 'c',
       q6: 'c',
-      q7: '
+      q7: 'c',
+      q8: 'c',
+      q9: 'd',
+      q10: 'c',
+      q11: 'b',
+      q12: 'c',
+      q13: 'c',
+      q14: 'c',
+      q15: 'c',
+      q16: 'd',
+      q17: 'b',
+      q18: 'b',
+      q19: 'a',
+      q20: 'b'
+    };
+
+    let score = 0;
+    let totalQuestions = Object.keys(correctAnswers).length;
+
+    for (let i = 1; i <= totalQuestions; i++) {
+      const selected = document.querySelector(`input[name="q${i}"]:checked`);
+      if (selected && selected.value === correctAnswers[`q${i}`]) {
+        score++;
+      }
+    }
+
+    const scoreDiv = document.getElementById('score');
+    scoreDiv.innerHTML = `<strong>Skor Anda: ${score} dari ${totalQuestions}</strong><br>${getFeedback(score, totalQuestions)}`;
+  }
+
+  function getFeedback(score, total) {
+    const percentage = (score / total) * 100;
+    if (percentage === 100) {
+      return "🎉 Luar biasa! Anda menjawab semua soal dengan benar.";
+    } else if (percentage >= 80) {
+      return "👍 Sangat baik! Anda memahami K3 dengan baik.";
+    } else if (percentage >= 60) {
+      return "🙂 Cukup baik, tapi masih bisa ditingkatkan.";
+    } else {
+      return "⚠️ Perlu belajar lebih lanjut tentang K3.";
+    }
+  }
+</script>
+</body>
+</html>
+  
