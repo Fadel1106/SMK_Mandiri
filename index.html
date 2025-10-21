@@ -47,6 +47,14 @@
     font-size: 16px;
     cursor: pointer;
   }
+
+  details {
+  display: none;
+}
+.show-answers details {
+  display: block;
+}
+
 </style>
 </head>
 <body>
@@ -302,7 +310,7 @@
     };
 
     let score = 0;
-    let totalQuestions = Object.keys(correctAnswers).length;
+    const totalQuestions = Object.keys(correctAnswers).length;
 
     for (let i = 1; i <= totalQuestions; i++) {
       const selected = document.querySelector(`input[name="q${i}"]:checked`);
@@ -313,6 +321,9 @@
 
     const scoreDiv = document.getElementById('score');
     scoreDiv.innerHTML = `<strong>Skor Anda: ${score} dari ${totalQuestions}</strong><br>${getFeedback(score, totalQuestions)}`;
+
+    // Tampilkan semua jawaban (details)
+    document.body.classList.add('show-answers');
   }
 
   function getFeedback(score, total) {
@@ -328,6 +339,7 @@
     }
   }
 </script>
+
 </body>
 </html>
   
