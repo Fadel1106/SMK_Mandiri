@@ -22,8 +22,10 @@
     margin-left: 20px;
     margin-top: 5px;
   }
-  .choices p {
+  .choices label {
+    display: block;
     margin: 4px 0;
+    cursor: pointer;
   }
   details summary {
     cursor: pointer;
@@ -38,10 +40,10 @@
 <div class="question">
   <p><strong>1. Apa kepanjangan dari K3?</strong></p>
   <div class="choices">
-    <p>✔️ a. Kesehatan, Keselamatan, dan Kebaikan</p>
-    <p>✔️ b. Kesehatan, Keselamatan, dan Kerja</p>
-    <p>✔️ c. Keselamatan, Kesehatan, dan Kerja</p>
-    <p>✔️ d. Keselamatan, Kebersihan, dan Kerja</p>
+    <label><input type="radio" name="q1" value="a"> a. Kesehatan, Keselamatan, dan Kebaikan</label>
+    <label><input type="radio" name="q1" value="b"> b. Kesehatan, Keselamatan, dan Kerja</label>
+    <label><input type="radio" name="q1" value="c"> c. Keselamatan, Kesehatan, dan Kerja</label>
+    <label><input type="radio" name="q1" value="d"> d. Keselamatan, Kebersihan, dan Kerja</label>
   </div>
   <details><summary>Jawaban</summary>c. Keselamatan, Kesehatan, dan Kerja</details>
 </div>
@@ -49,10 +51,10 @@
 <div class="question">
   <p><strong>2. Tujuan utama dari penerapan K3 adalah...</strong></p>
   <div class="choices">
-    <p>✔️ a. Menambah keuntungan perusahaan</p>
-    <p>✔️ b. Mengurangi biaya operasional</p>
-    <p>✔️ c. Menjamin keselamatan dan kesehatan pekerja</p>
-    <p>✔️ d. Memenuhi persyaratan hukum</p>
+    <label><input type="radio" name="q2" value="a"> a. Menambah keuntungan perusahaan</label>
+    <label><input type="radio" name="q2" value="b"> b. Mengurangi biaya operasional</label>
+    <label><input type="radio" name="q2" value="c"> c. Menjamin keselamatan dan kesehatan pekerja</label>
+    <label><input type="radio" name="q2" value="d"> d. Memenuhi persyaratan hukum</label>
   </div>
   <details><summary>Jawaban</summary>c. Menjamin keselamatan dan kesehatan pekerja</details>
 </div>
@@ -60,10 +62,10 @@
 <div class="question">
   <p><strong>3. Alat pelindung diri (APD) yang digunakan saat bekerja di ketinggian adalah...</strong></p>
   <div class="choices">
-    <p>✔️ a. Helm proyek</p>
-    <p>✔️ b. Sepatu safety</p>
-    <p>✔️ c. Body harness</p>
-    <p>✔️ d. Masker</p>
+    <label><input type="radio" name="q3" value="a"> a. Helm proyek</label>
+    <label><input type="radio" name="q3" value="b"> b. Sepatu safety</label>
+    <label><input type="radio" name="q3" value="c"> c. Body harness</label>
+    <label><input type="radio" name="q3" value="d"> d. Masker</label>
   </div>
   <details><summary>Jawaban</summary>c. Body harness</details>
 </div>
@@ -71,10 +73,10 @@
 <div class="question">
   <p><strong>4. Limbah B3 adalah singkatan dari...</strong></p>
   <div class="choices">
-    <p>✔️ a. Bahan Baku dan Barang Beracun</p>
-    <p>✔️ b. Bahan Berbahaya dan Beracun</p>
-    <p>✔️ c. Barang Bekas dan Basi</p>
-    <p>✔️ d. Bahan Bersih dan Berbahaya</p>
+    <label><input type="radio" name="q4" value="a"> a. Bahan Baku dan Barang Beracun</label>
+    <label><input type="radio" name="q4" value="b"> b. Bahan Berbahaya dan Beracun</label>
+    <label><input type="radio" name="q4" value="c"> c. Barang Bekas dan Basi</label>
+    <label><input type="radio" name="q4" value="d"> d. Bahan Bersih dan Berbahaya</label>
   </div>
   <details><summary>Jawaban</summary>b. Bahan Berbahaya dan Beracun</details>
 </div>
@@ -82,10 +84,10 @@
 <div class="question">
   <p><strong>5. Warna hijau dalam simbol K3 biasanya menunjukkan...</strong></p>
   <div class="choices">
-    <p>✔️ a. Peringatan bahaya</p>
-    <p>✔️ b. Informasi alat pelindung diri</p>
-    <p>✔️ c. Jalur evakuasi atau keselamatan</p>
-    <p>✔️ d. Daerah terlarang</p>
+    <label><input type="radio" name="q5" value="a"> a. Peringatan bahaya</label>
+    <label><input type="radio" name="q5" value="b"> b. Informasi alat pelindung diri</label>
+    <label><input type="radio" name="q5" value="c"> c. Jalur evakuasi atau keselamatan</label>
+    <label><input type="radio" name="q5" value="d"> d. Daerah terlarang</label>
   </div>
   <details><summary>Jawaban</summary>c. Jalur evakuasi atau keselamatan</details>
 </div>
@@ -93,10 +95,10 @@
 <div class="question">
   <p><strong>6. Siapa yang bertanggung jawab atas penerapan K3 di tempat kerja?</strong></p>
   <div class="choices">
-    <p>✔️ a. Hanya manajer K3</p>
-    <p>✔️ b. Hanya atasan langsung</p>
-    <p>✔️ c. Semua pihak di tempat kerja</p>
-    <p>✔️ d. Hanya pekerja</p>
+    <label><input type="radio" name="q6" value="a"> a. Hanya manajer K3</label>
+    <label><input type="radio" name="q6" value="b"> b. Hanya atasan langsung</label>
+    <label><input type="radio" name="q6" value="c"> c. Semua pihak di tempat kerja</label>
+    <label><input type="radio" name="q6" value="d"> d. Hanya pekerja</label>
   </div>
   <details><summary>Jawaban</summary>c. Semua pihak di tempat kerja</details>
 </div>
@@ -104,10 +106,10 @@
 <div class="question">
   <p><strong>7. APAR digunakan untuk...</strong></p>
   <div class="choices">
-    <p>✔️ a. Mengukur tekanan udara</p>
-    <p>✔️ b. Mendeteksi kebocoran gas</p>
-    <p>✔️ c. Memadamkan kebakaran awal</p>
-    <p>✔️ d. Mencegah banjir</p>
+    <label><input type="radio" name="q7" value="a"> a. Mengukur tekanan udara</label>
+    <label><input type="radio" name="q7" value="b"> b. Mendeteksi kebocoran gas</label>
+    <label><input type="radio" name="q7" value="c"> c. Memadamkan kebakaran awal</label>
+    <label><input type="radio" name="q7" value="d"> d. Mencegah banjir</label>
   </div>
   <details><summary>Jawaban</summary>c. Memadamkan kebakaran awal</details>
 </div>
@@ -115,10 +117,10 @@
 <div class="question">
   <p><strong>8. Bahan kimia harus disimpan di tempat yang...</strong></p>
   <div class="choices">
-    <p>✔️ a. Terbuka agar mudah diakses</p>
-    <p>✔️ b. Dingin dan gelap</p>
-    <p>✔️ c. Sesuai dengan MSDS (Material Safety Data Sheet)</p>
-    <p>✔️ d. Dekat dengan sumber api</p>
+    <label><input type="radio" name="q8" value="a"> a. Terbuka agar mudah diakses</label>
+    <label><input type="radio" name="q8" value="b"> b. Dingin dan gelap</label>
+    <label><input type="radio" name="q8" value="c"> c. Sesuai dengan MSDS (Material Safety Data Sheet)</label>
+    <label><input type="radio" name="q8" value="d"> d. Dekat dengan sumber api</label>
   </div>
   <details><summary>Jawaban</summary>c. Sesuai dengan MSDS (Material Safety Data Sheet)</details>
 </div>
@@ -126,10 +128,10 @@
 <div class="question">
   <p><strong>9. Apa tindakan pertama saat terjadi kecelakaan kerja?</strong></p>
   <div class="choices">
-    <p>✔️ a. Lapor ke HRD</p>
-    <p>✔️ b. Membawa korban ke rumah sakit</p>
-    <p>✔️ c. Menjauh dari lokasi</p>
-    <p>✔️ d. Mengamankan diri dan korban jika memungkinkan</p>
+    <label><input type="radio" name="q9" value="a"> a. Lapor ke HRD</label>
+    <label><input type="radio" name="q9" value="b"> b. Membawa korban ke rumah sakit</label>
+    <label><input type="radio" name="q9" value="c"> c. Menjauh dari lokasi</label>
+    <label><input type="radio" name="q9" value="d"> d. Mengamankan diri dan korban jika memungkinkan</label>
   </div>
   <details><summary>Jawaban</summary>d. Mengamankan diri dan korban jika memungkinkan</details>
 </div>
@@ -137,10 +139,10 @@
 <div class="question">
   <p><strong>10. Apa yang dimaksud dengan ergonomi?</strong></p>
   <div class="choices">
-    <p>✔️ a. Ilmu tentang api</p>
-    <p>✔️ b. Ilmu tentang kesehatan mental</p>
-    <p>✔️ c. Ilmu penyesuaian pekerjaan dengan manusia</p>
-    <p>✔️ d. Ilmu tentang penghematan energi</p>
+    <label><input type="radio" name="q10" value="a"> a. Ilmu tentang api</label>
+    <label><input type="radio" name="q10" value="b"> b. Ilmu tentang kesehatan mental</label>
+    <label><input type="radio" name="q10" value="c"> c. Ilmu penyesuaian pekerjaan dengan manusia</label>
+    <label><input type="radio" name="q10" value="d"> d. Ilmu tentang penghematan energi</label>
   </div>
   <details><summary>Jawaban</summary>c. Ilmu penyesuaian pekerjaan dengan manusia</details>
 </div>
@@ -148,10 +150,10 @@
 <div class="question">
   <p><strong>11. Jenis kebakaran yang disebabkan oleh cairan mudah terbakar adalah kebakaran kelas...?</strong></p>
   <div class="choices">
-    <p>✔️ a. A</p>
-    <p>✔️ b. B</p>
-    <p>✔️ c. C</p>
-    <p>✔️ d. D</p>
+    <label><input type="radio" name="q11" value="a"> a. A</label>
+    <label><input type="radio" name="q11" value="b"> b. B</label>
+    <label><input type="radio" name="q11" value="c"> c. C</label>
+    <label><input type="radio" name="q11" value="d"> d. D</label>
   </div>
   <details><summary>Jawaban</summary>b. B</details>
 </div>
@@ -159,10 +161,10 @@
 <div class="question">
   <p><strong>12. Tindakan preventif adalah...</strong></p>
   <div class="choices">
-    <p>✔️ a. Tindakan sesudah kecelakaan</p>
-    <p>✔️ b. Tindakan untuk mengobati korban</p>
-    <p>✔️ c. Tindakan pencegahan agar kecelakaan tidak terjadi</p>
-    <p>✔️ d. Tindakan memperbaiki kerusakan</p>
+    <label><input type="radio" name="q12" value="a"> a. Tindakan sesudah kecelakaan</label>
+    <label><input type="radio" name="q12" value="b"> b. Tindakan untuk mengobati korban</label>
+    <label><input type="radio" name="q12" value="c"> c. Tindakan pencegahan agar kecelakaan tidak terjadi</label>
+    <label><input type="radio" name="q12" value="d"> d. Tindakan memperbaiki kerusakan</label>
   </div>
   <details><summary>Jawaban</summary>c. Tindakan pencegahan agar kecelakaan tidak terjadi</details>
 </div>
@@ -170,10 +172,10 @@
 <div class="question">
   <p><strong>13. Simbol segitiga kuning menunjukkan...</strong></p>
   <div class="choices">
-    <p>✔️ a. Larangan</p>
-    <p>✔️ b. Perintah</p>
-    <p>✔️ c. Peringatan</p>
-    <p>✔️ d. Informasi</p>
+    <label><input type="radio" name="q13" value="a"> a. Larangan</label>
+    <label><input type="radio" name="q13" value="b"> b. Perintah</label>
+    <label><input type="radio" name="q13" value="c"> c. Peringatan</label>
+    <label><input type="radio" name="q13" value="d"> d. Informasi</label>
   </div>
   <details><summary>Jawaban</summary>c. Peringatan</details>
 </div>
@@ -181,10 +183,10 @@
 <div class="question">
   <p><strong>14. Apa fungsi dari MSDS (Material Safety Data Sheet)?</strong></p>
   <div class="choices">
-    <p>✔️ a. Daftar absen pekerja</p>
-    <p>✔️ b. Dokumen pengeluaran barang</p>
-    <p>✔️ c. Informasi tentang bahan kimia dan penanganannya</p>
-    <p>✔️ d. Formulir pengaduan</p>
+    <label><input type="radio" name="q14" value="a"> a. Daftar absen pekerja</label>
+    <label><input type="radio" name="q14" value="b"> b. Dokumen pengeluaran barang</label>
+    <label><input type="radio" name="q14" value="c"> c. Informasi tentang bahan kimia dan penanganannya</label>
+    <label><input type="radio" name="q14" value="d"> d. Formulir pengaduan</label>
   </div>
   <details><summary>Jawaban</summary>c. Informasi tentang bahan kimia dan penanganannya</details>
 </div>
@@ -192,10 +194,10 @@
 <div class="question">
   <p><strong>15. Faktor utama penyebab kecelakaan kerja adalah...</strong></p>
   <div class="choices">
-    <p>✔️ a. Alat yang rusak</p>
-    <p>✔️ b. Cuaca</p>
-    <p>✔️ c. Human error (kesalahan manusia)</p>
-    <p>✔️ d. Bencana alam</p>
+    <label><input type="radio" name="q15" value="a"> a. Alat yang rusak</label>
+    <label><input type="radio" name="q15" value="b"> b. Cuaca</label>
+    <label><input type="radio" name="q15" value="c"> c. Human error (kesalahan manusia)</label>
+    <label><input type="radio" name="q15" value="d"> d. Bencana alam</label>
   </div>
   <details><summary>Jawaban</summary>c. Human error (kesalahan manusia)</details>
 </div>
@@ -203,10 +205,10 @@
 <div class="question">
   <p><strong>16. Yang termasuk dalam APD untuk mata adalah...</strong></p>
   <div class="choices">
-    <p>✔️ a. Face shield</p>
-    <p>✔️ b. Masker</p>
-    <p>✔️ c. Sepatu boot</p>
-    <p>✔️ d. Kacamata safety</p>
+    <label><input type="radio" name="q16" value="a"> a. Face shield</label>
+    <label><input type="radio" name="q16" value="b"> b. Masker</label>
+    <label><input type="radio" name="q16" value="c"> c. Sepatu boot</label>
+    <label><input type="radio" name="q16" value="d"> d. Kacamata safety</label>
   </div>
   <details><summary>Jawaban</summary>d. Kacamata safety</details>
 </div>
@@ -214,10 +216,10 @@
 <div class="question">
   <p><strong>17. Lingkungan kerja yang aman harus bebas dari...</strong></p>
   <div class="choices">
-    <p>✔️ a. Musik keras</p>
-    <p>✔️ b. Debu, asap, dan bahan berbahaya</p>
-    <p>✔️ c. Teknologi</p>
-    <p>✔️ d. Internet</p>
+    <label><input type="radio" name="q17" value="a"> a. Musik keras</label>
+    <label><input type="radio" name="q17" value="b"> b. Debu, asap, dan bahan berbahaya</label>
+    <label><input type="radio" name="q17" value="c"> c. Teknologi</label>
+    <label><input type="radio" name="q17" value="d"> d. Internet</label>
   </div>
   <details><summary>Jawaban</summary>b. Debu, asap, dan bahan berbahaya</details>
 </div>
@@ -225,35 +227,5 @@
 <div class="question">
   <p><strong>18. Apa fungsi dari rambu K3?</strong></p>
   <div class="choices">
-    <p>✔️ a. Menunjukkan arah parkir</p>
-    <p>✔️ b. Memperingatkan dan memberi informasi keselamatan</p>
-    <p>✔️ c. Alat komunikasi antar karyawan</p>
-    <p>✔️ d. Penanda waktu kerja</p>
-  </div>
-  <details><summary>Jawaban</summary>b. Memperingatkan dan memberi informasi keselamatan</details>
-</div>
-
-<div class="question">
-  <p><strong>19. Program pelatihan K3 wajib diberikan kepada...</strong></p>
-  <div class="choices">
-    <p>✔️ a. Hanya supervisor</p>
-    <p>✔️ b. Semua pekerja baru</p>
-    <p>✔️ c. Hanya staf HR</p>
-    <p>✔️ d. Tim kebersihan</p>
-  </div>
-  <details><summary>Jawaban</summary>b. Semua pekerja baru</details>
-</div>
-
-<div class="question">
-  <p><strong>20. Tindakan yang tepat jika terjadi tumpahan bahan kimia adalah...</strong></p>
-  <div class="choices">
-    <p>✔️ a. Langsung dilap pakai kain</p>
-    <p>✔️ b. Mengabaikan karena akan menguap</p>
-    <p>✔️ c. Mengikuti prosedur penanganan bahan kimia</p>
-    <p>✔️ d. Menyiram dengan air</p>
-  </div>
-  <details><summary>Jawaban</summary>c. Mengikuti prosedur penanganan bahan kimia</details>
-</div>
-
-</body>
-</html>
+    <label><input type="radio" name="q18" value="a"> a. Menunjukkan arah parkir</label>
+    <label><input type="radio" name="q18" value="b"> b. Memperingatkan
