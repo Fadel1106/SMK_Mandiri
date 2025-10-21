@@ -32,6 +32,21 @@
     font-weight: bold;
     margin-top: 5px;
   }
+  #score {
+    margin-top: 30px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    text-align: center;
+    font-size: 18px;
+  }
+  button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
 </style>
 </head>
 <body>
@@ -228,4 +243,46 @@
   <p><strong>18. Apa fungsi dari rambu K3?</strong></p>
   <div class="choices">
     <label><input type="radio" name="q18" value="a"> a. Menunjukkan arah parkir</label>
-    <label><input type="radio" name="q18" value="b"> b. Memperingatkan
+    <label><input type="radio" name="q18" value="b"> b. Memperingatkan bahaya atau memberikan informasi keselamatan</label>
+    <label><input type="radio" name="q18" value="c"> c. Menunjukkan waktu kerja</label>
+    <label><input type="radio" name="q18" value="d"> d. Menunjukkan lokasi kantin</label>
+  </div>
+  <details><summary>Jawaban</summary>b. Memperingatkan bahaya atau memberikan informasi keselamatan</details>
+</div>
+
+<div class="question">
+  <p><strong>19. Apa yang dimaksud dengan risiko dalam K3?</strong></p>
+  <div class="choices">
+    <label><input type="radio" name="q19" value="a"> a. Kemungkinan terjadinya bahaya atau kerugian</label>
+    <label><input type="radio" name="q19" value="b"> b. Biaya produksi perusahaan</label>
+    <label><input type="radio" name="q19" value="c"> c. Jumlah pekerja di tempat kerja</label>
+    <label><input type="radio" name="q19" value="d"> d. Lama waktu kerja</label>
+  </div>
+  <details><summary>Jawaban</summary>a. Kemungkinan terjadinya bahaya atau kerugian</details>
+</div>
+
+<div class="question">
+  <p><strong>20. Apa tujuan dari pelatihan K3?</strong></p>
+  <div class="choices">
+    <label><input type="radio" name="q20" value="a"> a. Meningkatkan produktivitas kerja</label>
+    <label><input type="radio" name="q20" value="b"> b. Mengurangi risiko kecelakaan dan meningkatkan kesadaran keselamatan</label>
+    <label><input type="radio" name="q20" value="c"> c. Menambah gaji pekerja</label>
+    <label><input type="radio" name="q20" value="d"> d. Mengatur jadwal kerja</label>
+  </div>
+  <details><summary>Jawaban</summary>b. Mengurangi risiko kecelakaan dan meningkatkan kesadaran keselamatan</details>
+</div>
+
+<button onclick="calculateScore()">Hitung Skor</button>
+
+<div id="score"></div>
+
+<script>
+  function calculateScore() {
+    const correctAnswers = {
+      q1: 'c',
+      q2: 'c',
+      q3: 'c',
+      q4: 'b',
+      q5: 'c',
+      q6: 'c',
+      q7: '
